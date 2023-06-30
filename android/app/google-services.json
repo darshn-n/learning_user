@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "293453216212",
+    "project_id": "gsearning-e4a6d",
+    "storage_bucket": "gsearning-e4a6d.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:293453216212:android:35f348e4a306bcf1c43e41",
+        "android_client_info": {
+          "package_name": "com.gsss.gsss_learning"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "293453216212-iklv22fuhmeaiadgukavtk4n23sf87av.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyD7I23HszJpwJ-hXw2FVLfqhGwBSaH7sjQ"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "293453216212-iklv22fuhmeaiadgukavtk4n23sf87av.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
