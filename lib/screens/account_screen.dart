@@ -7,7 +7,6 @@ import 'package:google_fonts/google_fonts.dart';
 import 'package:gsss_learning/widgets/logout_alert.dart';
 import 'package:url_launcher/url_launcher.dart';
 
-// final Uri _blogurl = Uri.parse('https://www.google.com/');
 String? encodeQueryParameters(Map<String, String> params) {
   return params.entries
       .map((MapEntry<String, String> e) =>

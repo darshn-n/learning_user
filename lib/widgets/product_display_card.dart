@@ -5,6 +5,7 @@ import 'package:gsss_learning/services/firebase_services.dart';
 import 'package:cloud_firestore/cloud_firestore.dart';
 import 'package:flutter/material.dart';
 import 'package:provider/provider.dart';
+import 'package:url_launcher/url_launcher.dart';
 
 class ProductDisplayCard extends StatefulWidget {
   const ProductDisplayCard({
@@ -21,43 +22,52 @@ class ProductDisplayCard extends StatefulWidget {
 class _ProductDisplayCardState extends State<ProductDisplayCard> {
   FirebaseService service = FirebaseService();
 
-
   @override
   Widget build(BuildContext context) {
     var provider = Provider.of<ProductProvider>(context);
     return InkWell(
       onTap: () {
         provider.getProductDetails(widget.data);
+        _launchUrl(
+          Uri.parse(
+            widget.data["link"],
+          ),
+        );
       },
       child: Container(
-          padding: const EdgeInsets.all(24),
-          decoration: BoxDecoration(
-            border: Border.all(
-              color: Colors.grey.shade400,
-            ),
-            color: Colors.grey[200],
-            borderRadius: BorderRadius.circular(12),
+        padding: const EdgeInsets.all(24),
+        decoration: BoxDecoration(
+          border: Border.all(
+            color: Colors.grey.shade400,
           ),
-          child: Row(
-            children: [
-
-              // Tile name
-              Text(
-                widget.data['text'],
-                maxLines: 1, // Don't wrap at all
-                softWrap: false, // Don't wrap at soft breaks
-                overflow: TextOverflow.ellipsis, // Clip the overflow
-              ),
-              const Spacer(),
-              const Align(
-                alignment: Alignment.topRight,
-                child: Icon(
-                  Icons.keyboard_arrow_right_outlined,
-                ),
-              )
-            ],
-          ),
+          color: Colors.grey[200],
+          borderRadius: BorderRadius.circular(12),
         ),
+        child: Row(
+          children: [
+            // Tile name
+            Text(
+              widget.data['text'],
+              maxLines: 1, // Don't wrap at all
+              softWrap: false, // Don't wrap at soft breaks
+              overflow: TextOverflow.ellipsis, // Clip the overflow
+            ),
+            const Spacer(),
+            const Align(
+              alignment: Alignment.topRight,
+              child: Icon(
+                Icons.keyboard_arrow_right_outlined,
+              ),
+            )
+          ],
+        ),
+      ),
     );
   }
+}
+
+// Launch :
+
+void _launchUrl(url) async {
+  if (!await launchUrl(url)) throw 'Could not launch $url';
 }

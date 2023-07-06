@@ -57,11 +57,6 @@ class _SubjectsScreenState extends State<SubjectsScreen> {
             ),
             SubjectCard(
               imgLink: 'assets/playstore.png',
-              sortID: 1,
-              subjectName: 'C++',
-            ),
-            SubjectCard(
-              imgLink: 'assets/playstore.png',
               sortID: 3,
               subjectName: 'Java',
             ),
