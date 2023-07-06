@@ -1,8 +1,7 @@
 import 'package:gsss_learning/providers/product_provider.dart';
 import 'package:gsss_learning/screens/account_screen.dart';
 import 'package:gsss_learning/screens/article_screen.dart';
-import 'package:gsss_learning/screens/categories/category_list.dart';
-import 'package:gsss_learning/screens/categories/sub_category_list.dart';
+
 import 'package:gsss_learning/screens/home_screen.dart';
 import 'package:gsss_learning/screens/login_screen.dart';
 import 'package:gsss_learning/screens/main_screen.dart';
@@ -47,8 +46,6 @@ class MyApp extends StatelessWidget {
         SplashScreen.id: (context) => const SplashScreen(),
         LoginScreen.id: (context) => const LoginScreen(),
         HomeScreen.id: (context) => const HomeScreen(),
-        CategoryListScreen.id: (context) => const CategoryListScreen(),
-        SubCategoryListScreen.id: (context) => const SubCategoryListScreen(),
         MainScreen.id: (context) => const MainScreen(),
         ProductDetailsScreen.id: (context) => const ProductDetailsScreen(),
         ProductByCategory.id: (context) => const ProductByCategory(),
@@ -58,3 +55,8 @@ class MyApp extends StatelessWidget {
     );
   }
 }
+
+
+
+
+// ID Used for order of qps or yt videos
