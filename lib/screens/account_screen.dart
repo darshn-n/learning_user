@@ -1,8 +1,10 @@
+import 'package:font_awesome_flutter/font_awesome_flutter.dart';
 import 'package:gsss_learning/screens/test_screen.dart';
 import 'package:gsss_learning/widgets/account_menu.dart';
 import 'package:firebase_auth/firebase_auth.dart';
 import 'package:flutter/material.dart';
 import 'package:google_fonts/google_fonts.dart';
+import 'package:gsss_learning/widgets/logout_alert.dart';
 import 'package:url_launcher/url_launcher.dart';
 
 // final Uri _blogurl = Uri.parse('https://www.google.com/');
@@ -81,32 +83,45 @@ class _AccountScreenState extends State<AccountScreen> {
                   right: 25,
                 ),
               ),
-              const SizedBox(
-                height: 30.0,
-              ),
-              const SizedBox(
-                height: 20,
-              ),
-              const Text(
-                "Darshan",
-                style: TextStyle(
-                  fontWeight: FontWeight.bold,
-                  color: Color(
-                    0xff050609,
+              ClipOval(
+                  child: Image.network(
+                    FirebaseAuth.instance.currentUser!.photoURL!,
                   ),
                 ),
-              ),
-              
-              const SizedBox(
-                height: 10,
-              ),
-              const Text(
-                "Email",
-                textAlign: TextAlign.center,
-              ),
-              const SizedBox(
-                height: 30,
-              ),
+                const SizedBox(
+                  height: 20,
+                ),
+                Text(
+                  "${FirebaseAuth.instance.currentUser!.displayName}",
+                  style: const TextStyle(
+                    fontWeight: FontWeight.bold,
+                    color: Color(
+                      0xff050609,
+                    ),
+                  ),
+                ),
+                const SizedBox(
+                  height: 10,
+                ),
+                Row(
+                  mainAxisAlignment: MainAxisAlignment.center,
+                  children: [
+                    const Icon(
+                      FontAwesomeIcons.google,
+                      size: 18,
+                    ),
+                    const SizedBox(
+                      width: 10,
+                    ),
+                    Text(
+                      "${FirebaseAuth.instance.currentUser!.email}",
+                    ),
+                  ],
+                ),
+                const SizedBox(
+                  height: 30,
+                ),
+
               
               AccountMenu(
                 accountButtonIcon: Icons.help_center_outlined,
@@ -142,6 +157,7 @@ class _AccountScreenState extends State<AccountScreen> {
               const SizedBox(
                 height: 30.0,
               ),
+              const LogoutAlert(),
             ],
           ),
         ),

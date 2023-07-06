@@ -85,11 +85,11 @@ class _LoginScreenState extends State<LoginScreen> {
           ),
           Container(
             padding: const EdgeInsets.only(
-              left: 95,
+              left: 85,
               top: 300,
             ),
             child: Image.asset(
-              "assets/logo_login.png",
+              "assets/playstore.png",
               width: 200,
             ),
           ),
@@ -155,7 +155,7 @@ class _LoginScreenState extends State<LoginScreen> {
                           height: 85,
                         ),
                         Text(
-                          " 2.0.0",
+                          " 1.0.0",
                           style: GoogleFonts.raleway(
                             fontSize: 14,
                             fontWeight: FontWeight.w500,
