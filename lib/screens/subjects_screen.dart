@@ -68,12 +68,12 @@ class _SubjectsScreenState extends State<SubjectsScreen> {
             SubjectCard(
               imgLink: 'assets/playstore.png',
               sortID: 5,
-              subjectName: 'DBMS',
+              subjectName: 'Web Dev',
             ),
             SubjectCard(
               imgLink: 'assets/playstore.png',
               sortID: 6,
-              subjectName: 'Software Testing',
+              subjectName: 'DS',
             ),
           ],
         ),
