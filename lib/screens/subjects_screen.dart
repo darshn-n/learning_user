@@ -56,27 +56,27 @@ class _SubjectsScreenState extends State<SubjectsScreen> {
               subjectName: 'C',
             ),
             SubjectCard(
-              imgLink: 'assets/location_bg.jpg',
+              imgLink: 'assets/playstore.png',
               sortID: 1,
               subjectName: 'C++',
             ),
             SubjectCard(
-              imgLink: 'assets/location_bg.jpg',
+              imgLink: 'assets/playstore.png',
               sortID: 3,
               subjectName: 'Java',
             ),
             SubjectCard(
-              imgLink: 'assets/location_bg.jpg',
+              imgLink: 'assets/playstore.png',
               sortID: 4,
               subjectName: 'Python',
             ),
             SubjectCard(
-              imgLink: 'assets/location_bg.jpg',
+              imgLink: 'assets/playstore.png',
               sortID: 5,
               subjectName: 'DBMS',
             ),
             SubjectCard(
-              imgLink: 'assets/location_bg.jpg',
+              imgLink: 'assets/playstore.png',
               sortID: 6,
               subjectName: 'Software Testing',
             ),

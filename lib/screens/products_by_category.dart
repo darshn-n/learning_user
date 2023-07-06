@@ -13,23 +13,24 @@ class ProductByCategory extends StatelessWidget {
     var catProvider = Provider.of<CategoryProvider>(context);
 
     return Scaffold(
-      backgroundColor: kscreenBackground,
-      appBar: AppBar(
         backgroundColor: kscreenBackground,
-        elevation: 0.0,
-        iconTheme: const IconThemeData(
-          color: Colors.black54,
-        ),
-        title: Text(
-          catProvider.selectedCategory.toString(),
-          style: const TextStyle(
-            color: Colors.black,
-            fontSize: 20,
-            fontWeight: FontWeight.normal,
+        appBar: AppBar(
+          backgroundColor: kscreenBackground,
+          elevation: 0.0,
+          iconTheme: const IconThemeData(
+            color: Colors.black54,
+          ),
+          title: Text(
+            catProvider.selectedCategory.toString(),
+            style: const TextStyle(
+              color: Colors.black,
+              fontSize: 20,
+              fontWeight: FontWeight.normal,
+            ),
           ),
         ),
-      ),
-      body: const SingleChildScrollView(child: ProductList())
-    );
+        body: const SingleChildScrollView(
+          child: ProductList(),
+        ));
   }
 }
