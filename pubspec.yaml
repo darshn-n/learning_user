@@ -48,10 +48,12 @@ dependencies:
 dev_dependencies:
   flutter_lints: ^2.0.0
   flutter_launcher_icons: ^0.12.0
+  flutter_native_splash: ^2.2.19
+
 
 flutter_icons:
-  android: true
-  ios: true
+  android: false
+  ios: false
   image_path: "assets/playstore.png"
   min_sdk_android: 21 # android min sdk min:16, default 21
 

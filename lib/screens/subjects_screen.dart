@@ -51,7 +51,7 @@ class _SubjectsScreenState extends State<SubjectsScreen> {
         child: Column(
           children: const [
             SubjectCard(
-              imgLink: 'assets/location_bg.jpg',
+              imgLink: 'assets/playstore.png',
               sortID: 2,
               subjectName: 'C',
             ),
@@ -122,7 +122,10 @@ class SubjectCard extends StatelessWidget {
               decoration: BoxDecoration(
                 borderRadius: BorderRadius.circular(20),
                 image: DecorationImage(
-                    image: AssetImage(imgLink), fit: BoxFit.cover),
+                    image: AssetImage(
+                      imgLink,
+                    ),
+                    fit: BoxFit.cover),
               ),
               child: Container(
                 decoration: BoxDecoration(

@@ -90,12 +90,12 @@ BEGIN
         BLOCK "040904e4"
         BEGIN
             VALUE "CompanyName", "com.gsss" "\0"
-            VALUE "FileDescription", "gsss_learning" "\0"
+            VALUE "FileDescription", "GSSS Learning" "\0"
             VALUE "FileVersion", VERSION_AS_STRING "\0"
-            VALUE "InternalName", "gsss_learning" "\0"
+            VALUE "InternalName", "GSSS Learning" "\0"
             VALUE "LegalCopyright", "Copyright (C) 2023 com.gsss. All rights reserved." "\0"
             VALUE "OriginalFilename", "gsss_learning.exe" "\0"
-            VALUE "ProductName", "gsss_learning" "\0"
+            VALUE "ProductName", "GSSS Learning" "\0"
             VALUE "ProductVersion", VERSION_AS_STRING "\0"
         END
     END
