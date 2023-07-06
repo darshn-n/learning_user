@@ -66,12 +66,15 @@ class _ProductListState extends State<ProductList> {
             return Column(
               crossAxisAlignment: CrossAxisAlignment.start,
               children: [
+                SizedBox(
+                height: MediaQuery.of(context).size.height * 0.03,
+                ),
                 GridView.builder(
                   shrinkWrap: true,
                   physics: const ScrollPhysics(),
                   gridDelegate: const SliverGridDelegateWithMaxCrossAxisExtent(
-                    maxCrossAxisExtent: 200,
-                    childAspectRatio: 2 / 2.8,
+                    maxCrossAxisExtent: 500,
+                    childAspectRatio: 2 / 0.5,
                     crossAxisSpacing: 10,
                     mainAxisSpacing: 10,
                   ),

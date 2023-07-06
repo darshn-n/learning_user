@@ -52,7 +52,7 @@ class _ProductDisplayCardState extends State<ProductDisplayCard> {
               const Align(
                 alignment: Alignment.topRight,
                 child: Icon(
-                  Icons.keyboard_arrow_left_outlined,
+                  Icons.keyboard_arrow_right_outlined,
                 ),
               )
             ],

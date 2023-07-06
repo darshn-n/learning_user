@@ -8,7 +8,7 @@ class FirebaseService {
   User? user = FirebaseAuth.instance.currentUser;
   CollectionReference users = FirebaseFirestore.instance.collection("users");
   CollectionReference products =
-      FirebaseFirestore.instance.collection("products");
+      FirebaseFirestore.instance.collection("uploadsByAdmin");
   CollectionReference categories =
       FirebaseFirestore.instance.collection("categories");
 
