@@ -27,12 +27,11 @@ class SubjectListByCatScreen extends StatelessWidget {
           color: Colors.black,
         ),
         elevation: 0.0,
-        
         title: const Text(
           'Materials',
           style: TextStyle(
             color: Colors.black,
-            fontSize: 14,
+            fontSize: 18,
             fontWeight: FontWeight.bold,
           ),
         ),
@@ -54,7 +53,9 @@ class SubjectListByCatScreen extends StatelessWidget {
             if (snapshot.connectionState == ConnectionState.waiting) {
               return Center(
                 child: Container(
-                  child: const Center(child: CircularProgressIndicator()),
+                  child: const Center(
+                    child: CircularProgressIndicator(),
+                  ),
                 ),
               );
             }
@@ -66,13 +67,11 @@ class SubjectListByCatScreen extends StatelessWidget {
                   var doc = snapshot.data!.docs[index];
                   return Padding(
                     padding: const EdgeInsets.all(8.0),
-
                     child: InkWell(
                       onTap: () {
                         // Products by Category
                         catProvider.getCategory(doc['catName']);
                         catProvider.getCatSnapshot(doc);
-                        // Product by category
                         Navigator.pushNamed(
                           context,
                           ProductByCategory.id,
@@ -89,8 +88,11 @@ class SubjectListByCatScreen extends StatelessWidget {
                               decoration: BoxDecoration(
                                 borderRadius: BorderRadius.circular(20),
                                 image: const DecorationImage(
-                                    image: AssetImage('assets/location_bg.jpg'),
-                                    fit: BoxFit.cover),
+                                  image: AssetImage(
+                                    'assets/learning.png',
+                                  ),
+                                  fit: BoxFit.cover,
+                                ),
                               ),
                               child: Container(
                                 decoration: BoxDecoration(
@@ -99,7 +101,7 @@ class SubjectListByCatScreen extends StatelessWidget {
                                     begin: Alignment.bottomRight,
                                     colors: [
                                       Colors.black.withOpacity(.4),
-                                      Colors.black.withOpacity(.2),
+                                      Colors.black.withOpacity(.3),
                                     ],
                                   ),
                                 ),
@@ -109,9 +111,10 @@ class SubjectListByCatScreen extends StatelessWidget {
                                     Text(
                                       doc['catName'],
                                       style: const TextStyle(
-                                          color: Colors.white,
-                                          fontSize: 35,
-                                          fontWeight: FontWeight.bold),
+                                        color: Colors.white,
+                                        fontSize: 20,
+                                        fontWeight: FontWeight.bold,
+                                      ),
                                     ),
                                     const SizedBox(
                                       height: 30,
@@ -119,7 +122,8 @@ class SubjectListByCatScreen extends StatelessWidget {
                                     Container(
                                       height: 50,
                                       margin: const EdgeInsets.symmetric(
-                                          horizontal: 40),
+                                        horizontal: 40,
+                                      ),
                                       decoration: BoxDecoration(
                                           borderRadius:
                                               BorderRadius.circular(10),
@@ -143,7 +147,6 @@ class SubjectListByCatScreen extends StatelessWidget {
                         ),
                       ),
                     ),
-
                   );
                 },
               ),

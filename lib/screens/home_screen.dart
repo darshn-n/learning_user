@@ -4,7 +4,6 @@ import 'package:flutter/material.dart';
 import 'package:gsss_learning/models/article_model.dart';
 import 'package:gsss_learning/widgets/custom_tag.dart';
 import 'package:gsss_learning/widgets/image_container.dart';
-import 'package:gsss_learning/widgets/my_drawer.dart';
 
 class HomeScreen extends StatefulWidget {
   static const String id = "home-screen";
@@ -28,7 +27,6 @@ class _HomeScreenState extends State<HomeScreen> {
           color: Colors.white,
         ),
       ),
-      drawer: const MyDrawer(),
       extendBodyBehindAppBar: true,
       body: ListView(
         padding: EdgeInsets.zero,
@@ -49,7 +47,11 @@ class _HomeScreenState extends State<HomeScreen> {
               views: 1204,
               imageUrl:
                   'https://images.unsplash.com/photo-1574280363402-2f672940b871?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=987&q=80',
-              createdAt: DateTime.now().subtract(const Duration(hours: 6)),
+              createdAt: DateTime.now().subtract(
+                const Duration(
+                  hours: 6,
+                ),
+              ),
             ),
           ),
           const Text(
@@ -102,24 +104,8 @@ class _NewsOfTheDay extends StatelessWidget {
             style: Theme.of(context).textTheme.headlineSmall!.copyWith(
                 fontWeight: FontWeight.bold, height: 1.25, color: Colors.white),
           ),
-          TextButton(
-            onPressed: () {},
-            style: TextButton.styleFrom(padding: EdgeInsets.zero),
-            child: Row(
-              children: [
-                Text(
-                  'Learn More',
-                  style: Theme.of(context).textTheme.bodyLarge!.copyWith(
-                        color: Colors.white,
-                      ),
-                ),
-                const SizedBox(width: 10),
-                const Icon(
-                  Icons.arrow_right_alt,
-                  color: Colors.white,
-                ),
-              ],
-            ),
+          SizedBox(
+          height: MediaQuery.of(context).size.height * 0.03,
           ),
         ],
       ),
