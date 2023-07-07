@@ -10,6 +10,7 @@ import 'package:gsss_learning/providers/category_provider.dart';
 import 'package:firebase_core/firebase_core.dart';
 import 'package:flutter/material.dart';
 import 'package:gsss_learning/screens/splash_screen.dart';
+import 'package:gsss_learning/screens/welcome/welcome_screen.dart';
 import 'package:provider/provider.dart';
 
 void main() async {
@@ -50,6 +51,7 @@ class MyApp extends StatelessWidget {
         ProductByCategory.id: (context) => const ProductByCategory(),
         AccountScreen.id: (context) => const AccountScreen(),
         ArticleScreen.id: (context) => const ArticleScreen(),
+        WelcomeScreen.id: (context) => const WelcomeScreen(),
       },
     );
   }

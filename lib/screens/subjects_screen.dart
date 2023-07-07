@@ -25,7 +25,7 @@ class _SubjectsScreenState extends State<SubjectsScreen> {
                 ScaffoldMessenger.of(context).showSnackBar(
                   SnackBar(
                     content: Text(
-                      'Made by Darshan',
+                      'Made by GSSS',
                       style: GoogleFonts.syne(
                         color: Colors.white,
                         fontSize: 15,
