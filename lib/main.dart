@@ -1,3 +1,4 @@
+import 'package:get/get.dart';
 import 'package:gsss_learning/providers/product_provider.dart';
 import 'package:gsss_learning/screens/account_screen.dart';
 import 'package:gsss_learning/screens/article_screen.dart';
@@ -36,7 +37,7 @@ class MyApp extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return MaterialApp(
+    return GetMaterialApp(
       debugShowCheckedModeBanner: false,
       theme: ThemeData(
         primaryColor: Colors.cyan,

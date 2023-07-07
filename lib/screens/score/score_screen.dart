@@ -3,6 +3,7 @@ import 'package:flutter_svg/flutter_svg.dart';
 import 'package:get/get.dart';
 import 'package:gsss_learning/constants/colors.dart';
 import 'package:gsss_learning/controllers/question_controller.dart';
+import 'package:gsss_learning/screens/welcome/welcome_screen.dart';
 
 class ScoreScreen extends StatelessWidget {
   const ScoreScreen({super.key});
@@ -19,7 +20,7 @@ class ScoreScreen extends StatelessWidget {
             children: [
               const Spacer(flex: 3),
               Text(
-                "Score",
+                "Your Score",
                 style: Theme.of(context)
                     .textTheme
                     .displaySmall!
@@ -33,7 +34,45 @@ class ScoreScreen extends StatelessWidget {
                     .headlineMedium!
                     .copyWith(color: kSecondaryColor),
               ),
-              const Spacer(flex: 3),
+              SizedBox(
+                height: MediaQuery.of(context).size.height * 0.1,
+              ),
+              InkWell(
+                onTap: () {
+                  Navigator.push<void>(
+                    context,
+                    MaterialPageRoute<void>(
+                      builder: (BuildContext context) => const WelcomeScreen(),
+                    ),
+                  );
+                },
+                child: Padding(
+                  padding: const EdgeInsets.all(36.0),
+                  child: Container(
+                    width: double.infinity,
+                    alignment: Alignment.center,
+                    padding: const EdgeInsets.all(kDefaultPadding * 0.75), // 15
+                    decoration: const BoxDecoration(
+                      gradient: kPrimaryGradient,
+                      borderRadius: BorderRadius.all(
+                        Radius.circular(
+                          12,
+                        ),
+                      ),
+                    ),
+                    child: Text(
+                      "Back to the Lobby",
+                      style: Theme.of(context)
+                          .textTheme
+                          .labelLarge!
+                          .copyWith(color: Colors.black),
+                    ),
+                  ),
+                ),
+              ),
+              const Spacer(
+                flex: 3,
+              ),
             ],
           )
         ],

@@ -22,19 +22,27 @@ class WelcomeScreen extends StatelessWidget {
                 children: [
                   const Spacer(flex: 2), //2/6
                   Text(
-                    "Let's Play Quiz,",
+                    "Skill Upgrader,",
                     style: Theme.of(context).textTheme.headlineMedium!.copyWith(
                         color: Colors.white, fontWeight: FontWeight.bold),
                   ),
-                  const Text("Enter your informations below"),
                   const Spacer(), // 1/6
                   const TextField(
                     decoration: InputDecoration(
                       filled: true,
-                      fillColor: Color(0xFF1C2341),
+                      fillColor: Color.fromARGB(
+                        255,
+                        247,
+                        248,
+                        251,
+                      ),
                       hintText: "Full Name",
                       border: OutlineInputBorder(
-                        borderRadius: BorderRadius.all(Radius.circular(12)),
+                        borderRadius: BorderRadius.all(
+                          Radius.circular(
+                            12,
+                          ),
+                        ),
                       ),
                     ),
                   ),
@@ -48,10 +56,14 @@ class WelcomeScreen extends StatelessWidget {
                           const EdgeInsets.all(kDefaultPadding * 0.75), // 15
                       decoration: const BoxDecoration(
                         gradient: kPrimaryGradient,
-                        borderRadius: BorderRadius.all(Radius.circular(12)),
+                        borderRadius: BorderRadius.all(
+                          Radius.circular(
+                            12,
+                          ),
+                        ),
                       ),
                       child: Text(
-                        "Lets Start Quiz",
+                        "Let's Start",
                         style: Theme.of(context)
                             .textTheme
                             .labelLarge!

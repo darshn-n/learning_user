@@ -1,5 +1,5 @@
 import 'package:font_awesome_flutter/font_awesome_flutter.dart';
-import 'package:gsss_learning/screens/test_screen.dart';
+import 'package:gsss_learning/screens/welcome/welcome_screen.dart';
 import 'package:gsss_learning/widgets/account_menu.dart';
 import 'package:firebase_auth/firebase_auth.dart';
 import 'package:flutter/material.dart';
@@ -123,21 +123,16 @@ class _AccountScreenState extends State<AccountScreen> {
 
               
               AccountMenu(
-                accountButtonIcon: Icons.help_center_outlined,
-                accountButtonText: 'Help Center',
+                accountButtonIcon: Icons.quiz_rounded,
+                accountButtonText: 'Quizzler',
                 onPressed: () {
                   Navigator.push<void>(
                     context,
                     MaterialPageRoute<void>(
-                      builder: (BuildContext context) => const ExampleScreen(),
+                      builder: (BuildContext context) => const WelcomeScreen(),
                     ),
                   );
                 },
-              ),
-              AccountMenu(
-                accountButtonIcon: Icons.timer_outlined,
-                accountButtonText: 'Upcoming Updates',
-                onPressed: () {},
               ),
               AccountMenu(
                 accountButtonIcon: Icons.verified_user_outlined,
