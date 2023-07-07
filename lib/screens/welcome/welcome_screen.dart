@@ -11,6 +11,14 @@ class WelcomeScreen extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
+      appBar: AppBar(
+        backgroundColor: Colors.transparent,
+        elevation: 0,
+        iconTheme: const IconThemeData(
+          color: Colors.white,
+        ),
+      ),
+      extendBodyBehindAppBar: true,
       body: Stack(
         children: [
           SvgPicture.asset("assets/icons/bg.svg", fit: BoxFit.fill),
@@ -48,7 +56,9 @@ class WelcomeScreen extends StatelessWidget {
                   ),
                   const Spacer(), // 1/6
                   InkWell(
-                    onTap: () => Get.to(const QuizScreen()),
+                    onTap: () => Get.to(
+                      const QuizScreen(),
+                    ),
                     child: Container(
                       width: double.infinity,
                       alignment: Alignment.center,

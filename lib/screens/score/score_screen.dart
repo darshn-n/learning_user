@@ -39,7 +39,7 @@ class ScoreScreen extends StatelessWidget {
               ),
               InkWell(
                 onTap: () {
-                  Navigator.push<void>(
+                  Navigator.pushReplacement(
                     context,
                     MaterialPageRoute<void>(
                       builder: (BuildContext context) => const WelcomeScreen(),
