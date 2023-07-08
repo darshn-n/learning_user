@@ -124,7 +124,7 @@ class _AccountScreenState extends State<AccountScreen> {
               
               AccountMenu(
                 accountButtonIcon: Icons.quiz_rounded,
-                accountButtonText: 'Quizzler',
+                accountButtonText: 'Quiz',
                 onPressed: () {
                   Navigator.push<void>(
                     context,

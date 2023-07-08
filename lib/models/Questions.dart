@@ -16,27 +16,86 @@ class Question {
 const List sample_data = [
   {
     "id": 1,
-    "question":
-        "Flutter is an open-source UI software development kit created by ______",
-    "options": ['Apple', 'Google', 'Facebook', 'Microsoft'],
-    "answer_index": 1,
+    "question": "How are String represented in memory in C?",
+    "options": [
+      'An array of characters.',
+      'The object of some class.',
+      'Same as other primitive data types.',
+      'LinkedList of characters.'
+    ],
+    "answer_index": 0,
   },
   {
     "id": 2,
-    "question": "When google release Flutter.",
-    "options": ['Jun 2017', 'Jun 2017', 'May 2017', 'May 2018'],
+    "question": "Number of primitive data types in Java are?",
+    "options": ['6', '7', '8', '9'],
     "answer_index": 2,
   },
   {
     "id": 3,
-    "question": "A memory location that holds a single letter or number.",
-    "options": ['Double', 'Int', 'Char', 'Word'],
-    "answer_index": 2,
+    "question":
+        "Identify the return type of a method that does not return any value.",
+    "options": ['int', 'void', 'double', 'None'],
+    "answer_index": 1,
   },
   {
     "id": 4,
-    "question": "What command do you use to output data to the screen?",
-    "options": ['Cin', 'Count>>', 'Cout', 'Output>>'],
+    "question":
+        "Which of the following sorting algorithms provides the best time complexity in the worst case scenario?",
+    "options": ['Quick sort', 'Bubble sort', 'Merge sort', 'Selection sort'],
     "answer_index": 2,
+  },
+  {
+    "id": 5,
+    "question":
+        "How is the second element in an array accessed based on pointer notation?",
+    "options": ['*a+2', '*(*a+2)', '*(a+2)', '&(a+2)'],
+    "answer_index": 2,
+  },
+  {
+    "id": 6,
+    "question": "What does MIME stand for?",
+    "options": [
+      'Multipurpose internet mail extra',
+      'Multi internet mail end',
+      'Multipurpose internet mail email',
+      'Multipurpose internet mail extension'
+    ],
+    "answer_index": 3,
+  },
+  {
+    "id": 7,
+    "question": "Which of the following is valid?",
+    "options": ['<_person>', '<123 person>', 'Both a and b', 'None of these'],
+    "answer_index": 0,
+  },
+  {
+    "id": 8,
+    "question": "Basic XML can be described as:",
+    "options": [
+      'A hierarchial structure of tagged elements,attributes and text.',
+      'All the HTML tags plus a set of new XML only tags',
+      'Object oriented structure of rows and columns',
+      'Processing instructions(pls)for text data'
+    ],
+    "answer_index": 0,
+  },
+  {
+    "id": 9,
+    "question": "Which type of Programming does Python support?",
+    "options": [
+      ' object-oriented programming',
+      'structured programming',
+      'functional programming',
+      'all of the mentioned'
+    ],
+    "answer_index": 3,
+  },
+  {
+    "id": 10,
+    "question":
+        "Which of the following functions is a built-in function in python?",
+    "options": ['factorial()', 'print()', 'seed()', 'sqrt()'],
+    "answer_index": 1,
   },
 ];

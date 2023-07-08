@@ -51,27 +51,27 @@ class _SubjectsScreenState extends State<SubjectsScreen> {
         child: Column(
           children: const [
             SubjectCard(
-              imgLink: 'assets/playstore.png',
+              imgLink: 'assets/c.png',
               sortID: 2,
               subjectName: 'C',
             ),
             SubjectCard(
-              imgLink: 'assets/playstore.png',
+              imgLink: 'assets/java.png',
               sortID: 3,
               subjectName: 'Java',
             ),
             SubjectCard(
-              imgLink: 'assets/playstore.png',
+              imgLink: 'assets/py.png',
               sortID: 4,
               subjectName: 'Python',
             ),
             SubjectCard(
-              imgLink: 'assets/playstore.png',
+              imgLink: 'assets/web.png',
               sortID: 5,
               subjectName: 'Web Dev',
             ),
             SubjectCard(
-              imgLink: 'assets/playstore.png',
+              imgLink: 'assets/ds.png',
               sortID: 6,
               subjectName: 'DS',
             ),
