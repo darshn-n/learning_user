@@ -35,11 +35,9 @@ class _HomeScreenState extends State<HomeScreen> {
           _NewsOfTheDay(
             article: Article(
               id: '2',
-              title: 'Geetha Shishu Shikshana Sangha(R)',
-              subtitle:
-                  'Aliquam laoreet ante non diam suscipit accumsan. Sed vel consequat leo, non suscipit odio. Aliquam turpis',
-              body:
-                  'Nullam sed augue a turpis bibendum cursus. Suspendisse potenti. Praesent mi ligula, mollis quis elit ac, eleifend vestibulum ex. Nullam quis sodales tellus. Integer feugiat dolor et nisi semper luctus. Nulla egestas nec augue facilisis pharetra. Sed ultricies nibh a odio aliquam, eu imperdiet purus aliquam. Donec id ante nec',
+              title: '',
+              subtitle: "",
+              body: "",
               author: 'Anna G. Wright',
               authorImageUrl: "assets/college.png",
               category: 'Politics',

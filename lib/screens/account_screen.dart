@@ -17,7 +17,7 @@ String? encodeQueryParameters(Map<String, String> params) {
 
 final Uri _reportBugs = Uri(
   scheme: 'mailto',
-  path: 'darshan51081@gmail.com',
+  path: 'varshithagowda421@gmail.com',
   query: encodeQueryParameters(
     <String, String>{
       'subject':
@@ -26,7 +26,7 @@ final Uri _reportBugs = Uri(
   ),
 );
 final Uri _privacyPolicy = Uri.parse(
-  "https://darshn-n.github.io/Privacy-Policy-Opportunes/",
+  "https://www.freeprivacypolicy.com/live/bcd8dbae-e617-4dec-aae6-c90e30b8b55f",
 );
 
 class AccountScreen extends StatefulWidget {

@@ -20,7 +20,7 @@ const List sample_data = [
     "options": [
       'An array of characters.',
       'The object of some class.',
-      'Same as other primitive data types.',
+      'Same as primitive data.',
       'LinkedList of characters.'
     ],
     "answer_index": 0,
@@ -56,10 +56,10 @@ const List sample_data = [
     "id": 6,
     "question": "What does MIME stand for?",
     "options": [
-      'Multipurpose internet mail extra',
+      'Multipurpose internet mail',
       'Multi internet mail end',
-      'Multipurpose internet mail email',
-      'Multipurpose internet mail extension'
+      'Multi internet mail email',
+      'Multipurpose internet mail'
     ],
     "answer_index": 3,
   },
@@ -73,9 +73,9 @@ const List sample_data = [
     "id": 8,
     "question": "Basic XML can be described as:",
     "options": [
-      'A hierarchial structure of tagged elements,attributes and text.',
-      'All the HTML tags plus a set of new XML only tags',
-      'Object oriented structure of rows and columns',
+      'A hierarchial structure.',
+      'All the HTML tags.',
+      'Object oriented.',
       'Processing instructions(pls)for text data'
     ],
     "answer_index": 0,
@@ -95,7 +95,12 @@ const List sample_data = [
     "id": 10,
     "question":
         "Which of the following functions is a built-in function in python?",
-    "options": ['factorial()', 'print()', 'seed()', 'sqrt()'],
+    "options": [
+      'factorial()',
+      'print()',
+      'seed()',
+      'sqrt()',
+    ],
     "answer_index": 1,
   },
 ];

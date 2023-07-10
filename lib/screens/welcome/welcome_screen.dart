@@ -17,6 +17,7 @@ class WelcomeScreen extends StatelessWidget {
         iconTheme: const IconThemeData(
           color: Colors.white,
         ),
+        
       ),
       extendBodyBehindAppBar: true,
       body: Stack(

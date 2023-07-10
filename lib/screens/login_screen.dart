@@ -13,7 +13,7 @@ import 'dart:math';
 import 'package:url_launcher/url_launcher.dart';
 
 final Uri _privacyPolicy = Uri.parse(
-  "https://darshn-n.github.io/Privacy-Policy/",
+  "https://www.freeprivacypolicy.com/live/bcd8dbae-e617-4dec-aae6-c90e30b8b55f",
 );
 
 class LoginScreen extends StatefulWidget {
@@ -85,12 +85,12 @@ class _LoginScreenState extends State<LoginScreen> {
           ),
           Container(
             padding: const EdgeInsets.only(
-              left: 85,
-              top: 300,
+              left: 30,
+              top: 220,
             ),
             child: Image.asset(
               "assets/playstore.png",
-              width: 200,
+              width: 300,
             ),
           ),
           SingleChildScrollView(
